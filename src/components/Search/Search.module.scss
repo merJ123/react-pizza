@@ -1,0 +1,53 @@
+.icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.3;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+}
+.close {
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    rotate: 90deg;
+    opacity: 0.8;
+  }
+}
+
+.root {
+  margin-right: 100px;
+  @media (max-width: 1108px) {
+   order: 1;   
+   margin-top: 20px;
+  }
+  @media (max-width: 645px) {
+    margin-right: 0;
+  }
+}
+
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 20px;
+  width: 350px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 25px;
+  transition: all 0.15s ease-in-out;
+
+  @media (max-width: 415px) {
+    width: 80vw;
+    padding-left: 20px;
+  }
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
